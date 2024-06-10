@@ -134,53 +134,20 @@ h6 {
   inset: 0;
   background-color: rgba(0,0,0,.8)
 }
-.presentation {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  z-index: 2;
-  max-width: 400px;
-  background: url(../img/mockup.webp) 0 0/100% 100% no-repeat;
-  margin: 2rem auto;
-  height: 85vh
-}
-.presentation__mockup-camera {
-  position: absolute;
-  top: 0;
-  z-index: 10;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-  transform: translateX(-50%)
-}
-.presentation__mockup-camera svg {
-  max-width: 100px
-}
-.presentation__mockup > svg {
-  max-width: 30rem;
-  width: 100%;
-  height: 80vh;
-  position: relative;
-  z-index: 3
-}
 * {
   -webkit-user-select: none;
   -ms-user-select: none;
   user-select: none
 }
 .app {
-  position: absolute;
+  position: relative;
   z-index: 5;
-  top: 1rem;
-  left: 1rem;
-  right: 1rem;
-  bottom: 1rem;
   overflow: hidden;
-  border-radius: 54px;
   background: url(../img/bg.webp) 0 0/cover no-repeat;
   -webkit-user-select: none;
   -ms-user-select: none;
-  user-select: none
+  user-select: none;
+  height: 100vh
 }
 .app__wrapper {
   padding: 4rem 1rem 3.25rem 1rem;
