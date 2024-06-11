@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20240611040207">
+	<link rel="stylesheet" href="css/style.min.css?_v=20240611041619">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -211,20 +211,20 @@
 									</div>
 								</div>
 								<div class="header-app__actions actions-user">
-									<button class="button button-type-gradient">Lucky</button>
-									<button class="button button-type-gradient">Invite</button>
-									<button class="button button-type-gradient">Quest</button>
+									<button onclick="vibrate()" class="button button-type-gradient">Lucky</button>
+									<button onclick="vibrate()" class="button button-type-gradient">Invite</button>
+									<button onclick="vibrate()" class="button button-type-gradient">Quest</button>
 								</div>
 							</div>
 							<div class="header-app__right">
 								<div class="header-app__balance balance">
-									<div class="balance__info balance__coins">
+									<a href="#" class="balance__info balance__coins">
 										<span>34324</span>
-									</div>
-									<div class="balance__info balance__ducks">
+									</a>
+									<a href="#" class="balance__info balance__ducks">
 
 										<span>233</span>
-									</div>
+									</a>
 								</div>
 							</div>
 						</div>
@@ -247,8 +247,20 @@
 			<div class="footer__container">
 			</div>
 		</footer>
+
 	</div>
-	<script src="js/app.min.js?_v=20240611040207"></script>
+	<script>
+		function vibrate() {
+			// Проверяем, поддерживает ли браузер API вибрации
+			if ("vibrate" in navigator) {
+				// Задаем паттерн вибрации (можно передать массив чисел для задания длительности вибраций и пауз между ними)
+				navigator.vibrate([200, 100, 200]);
+			} else {
+				console.log("API вибрации не поддерживается");
+			}
+		}
+	</script>
+	<script src="js/app.min.js?_v=20240611041619"></script>
 </body>
 
 </html>
