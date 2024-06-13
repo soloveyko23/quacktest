@@ -249,6 +249,23 @@ button:focus {
   -webkit-animation: moveAlongPath 36s cubic-bezier(0,.44,.65,1.09) infinite;
   animation: moveAlongPath 36s cubic-bezier(0,.44,.65,1.09) infinite
 }
+.ball-11 {
+  offset-path: path("M4154.5 97.5009C1932 1003 2112 -359.999 .5 97.5009");
+  -webkit-animation: moveAlongPath 16s cubic-bezier(0,.44,.65,1.09) infinite;
+  animation: moveAlongPath 16s cubic-bezier(0,.44,.65,1.09) infinite
+}
+.ball-12 {
+  offset-path: path("M4154.5 97.5009C1932 1003 2112 -359.999 .5 97.5009");
+  -webkit-animation: moveAlongPath 12s cubic-bezier(0,.44,.65,1.09) infinite;
+  animation: moveAlongPath 12s cubic-bezier(0,.44,.65,1.09) infinite;
+  top: 10%
+}
+.ball-13 {
+  offset-path: path("M4154.5 97.5009C1932 1003 2112 -359.999 .5 97.5009");
+  top: 12%;
+  -webkit-animation: moveAlongPath 20s cubic-bezier(0,.44,.65,1.09) infinite;
+  animation: moveAlongPath 20s cubic-bezier(0,.44,.65,1.09) infinite
+}
 .app {
   position: relative;
   z-index: 5;
@@ -257,6 +274,136 @@ button:focus {
   -ms-user-select: none;
   user-select: none;
   height: 100vh
+}
+.app #duck {
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  transition: -webkit-transform .5s ease;
+  transition: transform .5s ease;
+  transition: transform .5s ease,-webkit-transform .5s ease;
+  -webkit-transform-origin: bottom center;
+  transform-origin: bottom center;
+  position: relative;
+  -webkit-perspective: 1000px;
+  perspective: 1000px
+}
+.app #duck .message {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1.375rem;
+  font-weight: 700;
+  color: #fff;
+  z-index: 10;
+  pointer-events: none;
+  opacity: 1;
+  -webkit-animation: messageAnimation 1s forwards;
+  animation: messageAnimation 1s forwards
+}
+@-webkit-keyframes messageAnimation {
+  0% {
+    opacity: 1;
+    -webkit-transform: translate(-50%,0);
+    transform: translate(-50%,0)
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translate(-50%,-50px);
+    transform: translate(-50%,-50px)
+  }
+}
+@keyframes messageAnimation {
+  0% {
+    opacity: 1;
+    -webkit-transform: translate(-50%,0);
+    transform: translate(-50%,0)
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translate(-50%,-50px);
+    transform: translate(-50%,-50px)
+  }
+}
+.app-page__content {
+  box-sizing: border-box;
+  border: .3px solid rgba(0,0,0,.2);
+  border-radius: 22px;
+  padding: 12px;
+  box-shadow: inset 4px 6px 8px 0 rgba(255,255,255,.12),inset 0 -4px 4px 0 rgba(0,0,0,.11);
+  -webkit-backdrop-filter: blur(22px);
+  backdrop-filter: blur(22px);
+  background: linear-gradient(178.95deg,rgba(191,227,105,.9) -35.283%,rgba(115,138,59,.9) 126.771%);
+  opacity: .95;
+  min-height: 9.375rem;
+  position: relative
+}
+.app-page__content .page-content__header {
+  min-height: 3.125rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url(../img/page-content-header.webp) 0 0/100% 100% no-repeat
+}
+.app-page__content .page-content__header-close {
+  position: absolute;
+  right: -6px;
+  top: -6px;
+  transition: all .3s
+}
+.app-page__content .page-content__header-close:active {
+  -webkit-transform: scale(.95);
+  transform: scale(.95)
+}
+.app-page__content .page-content__header span {
+  color: #fff;
+  font-size: 1.75rem;
+  font-weight: 400;
+  line-height: 10px;
+  text-transform: uppercase;
+  text-align: center
+}
+.app-shop {
+  padding-top: 1.625rem
+}
+.app-page {
+  transition: all .3s;
+  width: 100%
+}
+.app-content {
+  display: flex
+}
+.app .hide {
+  opacity: 0;
+  visibility: hidden;
+  left: .75rem;
+  right: .75rem;
+  position: absolute;
+  -webkit-transform: translateX(100%);
+  transform: translateX(100%)
+}
+.app .hidden {
+  position: absolute;
+  left: .75rem;
+  right: .75rem;
+  -webkit-transform: translateX(-100%);
+  transform: translateX(-100%);
+  opacity: 0;
+  visibility: hidden
+}
+.app .show {
+  position: absolute;
+  left: .75rem;
+  right: .75rem;
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+  opacity: 1;
+  visibility: visible;
+  width: auto
 }
 .app__sea {
   position: absolute;
@@ -278,7 +425,14 @@ button:focus {
   height: 100%;
   position: relative;
   z-index: 2;
+  overflow-x: hidden;
+  overflow-y: auto
+}
+.app__wrapper:not(.change-bg) {
   background: url(../img/bg.webp) 0 0/100% 890px no-repeat
+}
+.change-bg .app__wrapper {
+  background: linear-gradient(189.19deg,#43cdff -2.508%,#b8f2fe 23.941%)
 }
 .app__ui {
   position: absolute;
@@ -287,19 +441,154 @@ button:focus {
   left: 0;
   right: -3.125rem
 }
+.app__elements {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  left: 0;
+  right: -3.125rem
+}
+.app__elements .cloud {
+  position: absolute;
+  width: 100%
+}
+.app__elements .cloud img {
+  transition: all .3s
+}
+.app__elements .cloud.cloud-2 {
+  top: -17%
+}
+.app__elements .cloud.cloud-2 img {
+  position: absolute;
+  -webkit-animation: moveImage 130s cubic-bezier(0,.44,.65,1.09) infinite;
+  animation: moveImage 130s cubic-bezier(0,.44,.65,1.09) infinite
+}
+.app__elements .cloud.cloud-3 {
+  top: 30%
+}
+.app__elements .cloud.cloud-3 img {
+  position: absolute;
+  -webkit-animation: moveImage3 60s cubic-bezier(0,.44,.65,1.09) infinite;
+  animation: moveImage3 60s cubic-bezier(0,.44,.65,1.09) infinite
+}
+.app__elements .cloud.cloud-4 {
+  top: 25%
+}
+.app__elements .cloud.cloud-4 img {
+  position: absolute;
+  left: -100%;
+  -webkit-animation: moveImage4 60s cubic-bezier(0,.44,.65,1.09) infinite 10s;
+  animation: moveImage4 60s cubic-bezier(0,.44,.65,1.09) infinite 10s
+}
+.app__elements .cloud.cloud-5 {
+  top: 15%
+}
+.app__elements .cloud.cloud-5 img {
+  position: absolute;
+  left: -100%;
+  -webkit-animation: moveImage4 60s cubic-bezier(0,.44,.65,1.09) infinite 5s;
+  animation: moveImage4 60s cubic-bezier(0,.44,.65,1.09) infinite 5s
+}
+.app__elements .cloud.cloud-6 {
+  top: 8%
+}
+.app__elements .cloud.cloud-6 img {
+  position: absolute;
+  max-width: 50%;
+  left: -100%;
+  -webkit-animation: moveImage4 60s cubic-bezier(0,.44,.65,1.09) infinite 20s;
+  animation: moveImage4 60s cubic-bezier(0,.44,.65,1.09) infinite 20s
+}
+.app__elements .cloud.cloud-1 {
+  top: 10%
+}
+.app__elements .cloud.cloud-1 img {
+  position: absolute;
+  -webkit-animation: moveImage2 80s cubic-bezier(0,.44,.65,1.09) infinite;
+  animation: moveImage2 80s cubic-bezier(0,.44,.65,1.09) infinite
+}
+@-webkit-keyframes moveImage {
+  from {
+    left: -50%
+  }
+  to {
+    left: 100%
+  }
+}
+@keyframes moveImage {
+  from {
+    left: -50%
+  }
+  to {
+    left: 100%
+  }
+}
+@-webkit-keyframes moveImage2 {
+  from {
+    left: -17%
+  }
+  to {
+    left: 100%
+  }
+}
+@keyframes moveImage2 {
+  from {
+    left: -17%
+  }
+  to {
+    left: 100%
+  }
+}
+@-webkit-keyframes moveImage3 {
+  from {
+    left: 50%
+  }
+  to {
+    left: 100%;
+    opacity: .6
+  }
+}
+@keyframes moveImage3 {
+  from {
+    left: 50%
+  }
+  to {
+    left: 100%;
+    opacity: .6
+  }
+}
+@-webkit-keyframes moveImage4 {
+  from {
+    left: -100%
+  }
+  to {
+    left: 100%;
+    opacity: .6
+  }
+}
+@keyframes moveImage4 {
+  from {
+    left: -100%
+  }
+  to {
+    left: 100%;
+    opacity: .6
+  }
+}
 .app .main-menu {
   position: fixed;
   bottom: 10px;
   left: .75rem;
   right: .75rem;
-  background: url(../img/bg-menu.webp) 0 bottom/100% no-repeat;
+  background: url(../img/bg-menu.webp) 0 bottom no-repeat;
+  background-size: 100% 70px!important;
   min-height: 4.4375rem;
-  z-index: 4
+  z-index: 4;
+  max-width: 30rem
 }
 .app .main-menu ul {
   display: flex;
   align-items: flex-end;
-  padding: 0 .875rem 1.25rem .875rem;
   justify-content: space-between
 }
 .app .main-menu__item.disabled {
@@ -375,13 +664,11 @@ button:focus {
   text-transform: uppercase
 }
 .app .main-menu__item .item__icon {
-  width: 52px;
-  height: 52px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
   transition: all .3s;
-  background: url(../img/menu-bg.svg) 0 0/cover no-repeat
+  background: url(../img/menu-bg.svg) 0 0/contain no-repeat
 }
 .app .main-menu__item .item__icon svg {
   -webkit-animation-duration: 1s;
@@ -467,8 +754,7 @@ button:focus {
   justify-content: space-between;
   gap: 1rem;
   z-index: 3;
-  position: sticky;
-  top: 0
+  position: relative
 }
 .app .content-app {
   padding-top: 26px;
@@ -692,8 +978,34 @@ button:focus {
   -webkit-transform: scale(.95);
   transform: scale(.95)
 }
+@media (min-width:480px) {
+  .app .main-menu__item .item__icon {
+    width: 3.25rem;
+    height: 3.25rem
+  }
+}
+@media (max-width:480px) {
+  .app .main-menu__item .item__icon {
+    width: 10.8333333333vw;
+    height: 10.8333333333vw
+  }
+  .app .main-menu__item .item__icon svg {
+    max-width: 50%;
+    width: 100%
+  }
+}
+@media (max-width:400px) {
+  .app .main-menu ul {
+    padding: 0 1rem 1.25rem 1rem
+  }
+}
 @media (max-width:25.875em) {
   .app .content-app__duck img {
     max-width: 80%
+  }
+}
+@media (max-width:480px) and (min-width:400px) {
+  .app .main-menu ul {
+    padding: 0 1.875rem 1.25rem 1.875rem
   }
 }
