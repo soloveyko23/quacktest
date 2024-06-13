@@ -1,15 +1,15 @@
-<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-<rect width="23.1429" height="24" fill="url(#pattern0_4012_1414)"/>
+<svg width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<rect width="23.1429" height="22" fill="url(#pattern0_4012_1414)"/>
 <g filter="url(#filter0_iii_4012_1414)">
-<rect x="13.7142" y="13.8182" width="10.2857" height="8.72727" rx="4" fill="url(#paint0_linear_4012_1414)"/>
+<rect x="13.7142" y="12.6667" width="10.2857" height="8" rx="4" fill="url(#paint0_linear_4012_1414)"/>
 </g>
-<rect x="14.2142" y="14.3182" width="9.28571" height="7.72727" rx="3.5" stroke="url(#paint1_linear_4012_1414)"/>
-<path d="M19.3613 17.754V17.1428C19.3613 16.9133 19.142 16.7273 18.8715 16.7273H18.8427C18.5722 16.7273 18.3529 16.9133 18.3529 17.1428V17.754H17.6326C17.3621 17.754 17.1428 17.9401 17.1428 18.1696V18.194C17.1428 18.4236 17.3621 18.6096 17.6326 18.6096H18.3529V19.2208C18.3529 19.4503 18.5722 19.6364 18.8427 19.6364H18.8715C19.142 19.6364 19.3613 19.4503 19.3613 19.2208V18.6096H20.0816C20.3521 18.6096 20.5714 18.4236 20.5714 18.194V18.1696C20.5714 17.9401 20.3521 17.754 20.0816 17.754H19.3613Z" fill="white"/>
+<rect x="14.2142" y="13.1667" width="9.28571" height="7" rx="3.5" stroke="url(#paint1_linear_4012_1414)"/>
+<path d="M19.3613 16.2745V15.7143C19.3613 15.5039 19.142 15.3333 18.8715 15.3333H18.8427C18.5722 15.3333 18.3529 15.5039 18.3529 15.7143V16.2745H17.6326C17.3621 16.2745 17.1428 16.4451 17.1428 16.6555V16.6779C17.1428 16.8883 17.3621 17.0588 17.6326 17.0588H18.3529V17.6191C18.3529 17.8295 18.5722 18 18.8427 18H18.8715C19.142 18 19.3613 17.8295 19.3613 17.6191V17.0588H20.0816C20.3521 17.0588 20.5714 16.8883 20.5714 16.6779V16.6555C20.5714 16.4451 20.3521 16.2745 20.0816 16.2745H19.3613Z" fill="white"/>
 <defs>
 <pattern id="pattern0_4012_1414" patternContentUnits="objectBoundingBox" width="1" height="1">
 <use xlink:href="#image0_4012_1414" transform="matrix(0.00271209 0 0 0.00305111 -0.185185 -0.166667)"/>
 </pattern>
-<filter id="filter0_iii_4012_1414" x="13.7142" y="9.81818" width="14.2858" height="18.7273" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<filter id="filter0_iii_4012_1414" x="13.7142" y="8.66669" width="14.2858" height="18" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
 <feFlood flood-opacity="0" result="BackgroundImageFix"/>
 <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
 <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
@@ -31,11 +31,11 @@
 <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.25 0"/>
 <feBlend mode="normal" in2="effect2_innerShadow_4012_1414" result="effect3_innerShadow_4012_1414"/>
 </filter>
-<linearGradient id="paint0_linear_4012_1414" x1="18.8571" y1="10.7013" x2="25.9587" y2="16.2303" gradientUnits="userSpaceOnUse">
+<linearGradient id="paint0_linear_4012_1414" x1="18.8571" y1="9.80954" x2="25.4833" y2="15.4375" gradientUnits="userSpaceOnUse">
 <stop stop-color="#F9B021"/>
 <stop offset="1" stop-color="#ED5D3F"/>
 </linearGradient>
-<linearGradient id="paint1_linear_4012_1414" x1="20.3809" y1="22.5454" x2="20.9992" y2="13.8013" gradientUnits="userSpaceOnUse">
+<linearGradient id="paint1_linear_4012_1414" x1="20.3809" y1="20.6667" x2="20.9008" y2="12.6448" gradientUnits="userSpaceOnUse">
 <stop stop-color="#DA6454"/>
 <stop offset="1" stop-color="#ECFE8A"/>
 </linearGradient>
