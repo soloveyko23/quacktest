@@ -45,7 +45,18 @@
     }
     const box = document.getElementById("duck");
     pageShop();
+    document.querySelector(".balance__coins").addEventListener("click", (() => {
+        document.querySelector("#appMain").classList.add("hidden");
+        document.querySelector("#app").classList.add("change-bg");
+        document.querySelector("#appShop").classList.add("show");
+    }));
+    document.querySelector(".balance__ducks").addEventListener("click", (() => {
+        document.querySelector("#appMain").classList.add("hidden");
+        document.querySelector("#app").classList.add("change-bg");
+        document.querySelector("#appShop").classList.add("show");
+    }));
     box.addEventListener("click", (function(event) {
+        if ("vibrate" in navigator) navigator.vibrate(100);
         const rect = box.getBoundingClientRect();
         const x = event.clientX - rect.left;
         const y = event.clientY - rect.top;

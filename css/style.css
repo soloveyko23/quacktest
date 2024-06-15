@@ -124,15 +124,17 @@ h6 {
   -o-object-fit: contain;
   object-fit: contain
 }
+body,
+html {
+  overflow: hidden;
+  height: 100%;
+  margin: 0;
+  padding: 0
+}
 .wrapper {
   background: url(../img/finiks.webp) 0 0/100% 100% no-repeat;
-  position: relative
-}
-.wrapper::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background-color: rgba(0,0,0,.8)
+  position: relative;
+  overflow: hidden
 }
 * {
   -webkit-user-select: none;
@@ -266,6 +268,20 @@ button:focus {
   -webkit-animation: moveAlongPath 20s cubic-bezier(0,.44,.65,1.09) infinite;
   animation: moveAlongPath 20s cubic-bezier(0,.44,.65,1.09) infinite
 }
+.grid {
+  display: grid
+}
+.grid-cols-3 {
+  grid-template-columns: repeat(3,1fr)
+}
+.gap-x-4 {
+  -webkit-column-gap: 1rem;
+  -moz-column-gap: 1rem;
+  column-gap: 1rem
+}
+.gap-y-8 {
+  row-gap: 2rem
+}
 .app {
   position: relative;
   z-index: 5;
@@ -342,11 +358,18 @@ button:focus {
   min-height: 9.375rem;
   position: relative
 }
+.app-page__content .page-content__row {
+  margin-bottom: 2rem
+}
+.app-page__content .page-content__row:last-child {
+  margin-bottom: 0
+}
 .app-page__content .page-content__header {
   min-height: 3.125rem;
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-bottom: .875rem;
   background: url(../img/page-content-header.webp) 0 0/100% 100% no-repeat
 }
 .app-page__content .page-content__header-close {
@@ -369,6 +392,53 @@ button:focus {
 }
 .app-shop {
   padding-top: 1.625rem
+}
+.app-shop__content .shop-content__item {
+  box-sizing: border-box;
+  border: 2px solid #fff;
+  border-radius: 1rem
+}
+.app-shop__content .shop-content__item .item__header {
+  min-height: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 12px;
+  margin-bottom: 14px
+}
+.app-shop__content .shop-content__item .item__header--brown {
+  background: url(../img/shop-item-header-brown.webp) 0 0/100% 1.5rem no-repeat
+}
+.app-shop__content .shop-content__item .item__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center
+}
+.app-shop__content .shop-content__item .item__content span {
+  font-size: 22px;
+  line-height: 10px;
+  color: #303e11;
+  margin-bottom: 14px;
+  text-align: center;
+  display: block
+}
+.app-shop__content .shop-content__item .item__content img {
+  max-width: 5.9375rem;
+  width: 100%;
+  -o-object-fit: contain;
+  object-fit: contain
+}
+.app-shop__content .shop-content__item .item__price {
+  color: #fff;
+  font-size: 1rem;
+  line-height: .625rem;
+  min-height: 1.625rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: -8px;
+  background: url(../img/price.webp) 0 0/100% 1.625rem no-repeat
 }
 .app-page {
   transition: all .3s;

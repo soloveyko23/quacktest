@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20240613174406">
+	<link rel="stylesheet" href="css/style.min.css?_v=20240615161006">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -329,8 +329,241 @@
 
 							<div class="app-shop hide app-page" id="appShop">
 								<div class="app-shop__content shop-content app-page__content page-content">
+									<button type="button" onclick="vibrate()" class="page-content__header-close close">
+										<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+											<g clip-path="url(#clip0_0_1351)">
+												<rect width="30" height="30" rx="15" fill="#8D504B" />
+												<path d="M20.6085 10.4859L20.6084 10.4771L20.608 10.4682C20.5835 9.95645 20.3945 9.44005 20.0054 9.03352C19.1775 8.16853 17.8328 8.16853 17.0049 9.03352L14.6488 11.4953C14.5622 11.5857 14.4318 11.5857 14.3453 11.4953C14.3453 11.4953 14.3453 11.4953 14.3453 11.4953L11.9962 9.03397L11.9962 9.03397L11.9942 9.03189C11.1666 8.17605 9.82442 8.17605 8.99683 9.03189L8.99683 9.03189L8.99526 9.03352C8.60617 9.44005 8.41719 9.95644 8.39269 10.4682L8.39219 10.4788V10.4893V11.3541C8.39219 11.8993 8.60224 12.4394 8.99207 12.8554L8.99206 12.8554L8.99526 12.8587L11.1729 15.1339L8.99667 17.4076C8.56652 17.8492 8.37085 18.4399 8.38552 19.0104V19.8482V19.8708L8.38782 19.8932C8.43641 20.3671 8.62434 20.8468 8.98859 21.2273C9.81648 22.0923 11.1612 22.0923 11.9891 21.2273L14.3453 18.7656C14.4318 18.6751 14.5622 18.6751 14.6488 18.7656L17.0049 21.2273C17.8328 22.0923 19.1775 22.0923 20.0054 21.2273C20.3857 20.83 20.5833 20.3148 20.608 19.7996L20.6085 19.789V19.7785V18.9826C20.6233 18.4145 20.4246 17.8401 20.0054 17.4021L17.8278 15.1269L20.0054 12.8518C20.4103 12.4288 20.5987 11.8951 20.615 11.3605L20.6152 11.3521L20.6152 11.3437L20.6085 10.4859Z" fill="#AEAEAE" />
+												<path d="M20.6085 10.4859L20.6084 10.4771L20.608 10.4682C20.5835 9.95645 20.3945 9.44005 20.0054 9.03352C19.1775 8.16853 17.8328 8.16853 17.0049 9.03352L14.6488 11.4953C14.5622 11.5857 14.4318 11.5857 14.3453 11.4953C14.3453 11.4953 14.3453 11.4953 14.3453 11.4953L11.9962 9.03397L11.9962 9.03397L11.9942 9.03189C11.1666 8.17605 9.82442 8.17605 8.99683 9.03189L8.99683 9.03189L8.99526 9.03352C8.60617 9.44005 8.41719 9.95644 8.39269 10.4682L8.39219 10.4788V10.4893V11.3541C8.39219 11.8993 8.60224 12.4394 8.99207 12.8554L8.99206 12.8554L8.99526 12.8587L11.1729 15.1339L8.99667 17.4076C8.56652 17.8492 8.37085 18.4399 8.38552 19.0104V19.8482V19.8708L8.38782 19.8932C8.43641 20.3671 8.62434 20.8468 8.98859 21.2273C9.81648 22.0923 11.1612 22.0923 11.9891 21.2273L14.3453 18.7656C14.4318 18.6751 14.5622 18.6751 14.6488 18.7656L17.0049 21.2273C17.8328 22.0923 19.1775 22.0923 20.0054 21.2273C20.3857 20.83 20.5833 20.3148 20.608 19.7996L20.6085 19.789V19.7785V18.9826C20.6233 18.4145 20.4246 17.8401 20.0054 17.4021L17.8278 15.1269L20.0054 12.8518C20.4103 12.4288 20.5987 11.8951 20.615 11.3605L20.6152 11.3521L20.6152 11.3437L20.6085 10.4859Z" stroke="#A6A6A6" stroke-width="0.882609" style="mix-blend-mode:multiply" />
+												<path fill-rule="evenodd" clip-rule="evenodd" d="M9.3161 9.31613C9.9695 8.6694 11.0229 8.6694 11.6763 9.31613L14.0299 11.6697C14.2899 11.9297 14.71 11.9297 14.97 11.6697L17.3236 9.31613C17.977 8.66273 19.0304 8.66273 19.6838 9.31613C20.3372 9.96953 20.3372 11.023 19.6838 11.6764L17.3303 14.0299C17.0702 14.29 17.0702 14.71 17.3303 14.97L19.6838 17.3236C20.3372 17.977 20.3372 19.0305 19.6838 19.6839C19.0304 20.3373 17.977 20.3373 17.3236 19.6839L14.97 17.3303C14.71 17.0703 14.2899 17.0703 14.0299 17.3303L11.6763 19.6839C11.0229 20.3373 9.9695 20.3373 9.3161 19.6839C8.6627 19.0305 8.6627 17.977 9.3161 17.3236L11.6697 14.97C11.9297 14.71 11.9297 14.29 11.6697 14.0299L9.3161 11.6764C8.66937 11.023 8.66937 9.96953 9.3161 9.31613Z" fill="white" />
+											</g>
+											<defs>
+												<clipPath id="clip0_0_1351">
+													<rect width="30" height="30" rx="15" fill="white" />
+												</clipPath>
+											</defs>
+										</svg>
+									</button>
+									<div class="page-content__row">
+										<div class="page-content__header shop-content__header">
+											<span>SHOP</span>
+
+										</div>
+
+										<div class="page-content__body shop-content__body">
+											<div class="row grid grid-cols-3 gap-x-4 gap-y-8">
+												<div class="shop-content__item item">
+													<div class="item__body">
+														<div class="item__header item__header--brown">
+															Trophy Gems
+														</div>
+														<div class="item__content">
+															<span>
+																2500
+															</span>
+															<img src="img/CoinStack.svg" alt="Image">
+														</div>
+														<div class="item__price">
+															$19.99
+														</div>
+													</div>
+												</div>
+												<div class="shop-content__item item">
+													<div class="item__body">
+														<div class="item__header item__header--brown">
+															Trophy Gems
+														</div>
+														<div class="item__content">
+															<span>
+																2500
+															</span>
+															<img src="img/CoinStack.svg" alt="Image">
+														</div>
+														<div class="item__price">
+															$19.99
+														</div>
+													</div>
+												</div>
+												<div class="shop-content__item item">
+													<div class="item__body">
+														<div class="item__header item__header--brown">
+															Trophy Gems
+														</div>
+														<div class="item__content">
+															<span>
+																2500
+															</span>
+															<img src="img/CoinStack.svg" alt="Image">
+														</div>
+														<div class="item__price">
+															$19.99
+														</div>
+													</div>
+												</div>
+												<div class="shop-content__item item">
+													<div class="item__body">
+														<div class="item__header item__header--brown">
+															Trophy Gems
+														</div>
+														<div class="item__content">
+															<span>
+																2500
+															</span>
+															<img src="img/CoinStack.svg" alt="Image">
+														</div>
+														<div class="item__price">
+															$19.99
+														</div>
+													</div>
+												</div>
+												<div class="shop-content__item item">
+													<div class="item__body">
+														<div class="item__header item__header--brown">
+															Trophy Gems
+														</div>
+														<div class="item__content">
+															<span>
+																2500
+															</span>
+															<img src="img/CoinStack.svg" alt="Image">
+														</div>
+														<div class="item__price">
+															$19.99
+														</div>
+													</div>
+												</div>
+												<div class="shop-content__item item">
+													<div class="item__body">
+														<div class="item__header item__header--brown">
+															Trophy Gems
+														</div>
+														<div class="item__content">
+															<span>
+																2500
+															</span>
+															<img src="img/CoinStack.svg" alt="Image">
+														</div>
+														<div class="item__price">
+															$19.99
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="page-content__row">
+										<div class="page-content__header shop-content__header">
+											<span>DAILY DEALS</span>
+
+										</div>
+
+										<div class="page-content__body shop-content__body">
+											<div class="row grid grid-cols-3 gap-x-4 gap-y-8">
+												<div class="shop-content__item item">
+													<div class="item__body">
+														<div class="item__header item__header--brown">
+															Trophy Gems
+														</div>
+														<div class="item__content">
+															<span>
+																2500
+															</span>
+															<img src="img/CoinStack.svg" alt="Image">
+														</div>
+														<div class="item__price">
+															$19.99
+														</div>
+													</div>
+												</div>
+												<div class="shop-content__item item">
+													<div class="item__body">
+														<div class="item__header item__header--brown">
+															Trophy Gems
+														</div>
+														<div class="item__content">
+															<span>
+																2500
+															</span>
+															<img src="img/CoinStack.svg" alt="Image">
+														</div>
+														<div class="item__price">
+															$19.99
+														</div>
+													</div>
+												</div>
+												<div class="shop-content__item item">
+													<div class="item__body">
+														<div class="item__header item__header--brown">
+															Trophy Gems
+														</div>
+														<div class="item__content">
+															<span>
+																2500
+															</span>
+															<img src="img/CoinStack.svg" alt="Image">
+														</div>
+														<div class="item__price">
+															$19.99
+														</div>
+													</div>
+												</div>
+												<div class="shop-content__item item">
+													<div class="item__body">
+														<div class="item__header item__header--brown">
+															Trophy Gems
+														</div>
+														<div class="item__content">
+															<span>
+																2500
+															</span>
+															<img src="img/CoinStack.svg" alt="Image">
+														</div>
+														<div class="item__price">
+															$19.99
+														</div>
+													</div>
+												</div>
+												<div class="shop-content__item item">
+													<div class="item__body">
+														<div class="item__header item__header--brown">
+															Trophy Gems
+														</div>
+														<div class="item__content">
+															<span>
+																2500
+															</span>
+															<img src="img/CoinStack.svg" alt="Image">
+														</div>
+														<div class="item__price">
+															$19.99
+														</div>
+													</div>
+												</div>
+												<div class="shop-content__item item">
+													<div class="item__body">
+														<div class="item__header item__header--brown">
+															Trophy Gems
+														</div>
+														<div class="item__content">
+															<span>
+																2500
+															</span>
+															<img src="img/CoinStack.svg" alt="Image">
+														</div>
+														<div class="item__price">
+															$19.99
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="app-ducks hide app-page" id="appDucks">
+								<div class="app-shop__content shop-content app-page__content page-content">
 									<div class="page-content__header shop-content__header">
-										<span>GEMS</span>
+										<span>DUCKS</span>
 
 									</div>
 									<button type="button" onclick="vibrate()" class="page-content__header-close close">
@@ -391,90 +624,7 @@
 												</div>
 												<div class="item__balance">
 													<i>
-														<svg xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 17 16" fill="none">
-															<g clip-path="url(#clip0_0_1486)">
-																<path d="M14.4228 10.0545C13.2342 13.7314 9.6111 15.8498 6.33035 14.7861C5.83281 14.6248 4.91424 14.3645 4.49413 14.0856C2.14404 12.5255 0.685198 9.0465 1.69354 5.92721C2.72384 2.74 6.02648 0.80329 8.90666 1.01562C9.34918 1.04824 10.1977 1.32915 10.6346 1.47082C13.9154 2.53457 15.6114 6.37763 14.4228 10.0545Z" fill="url(#paint0_radial_0_1486)" />
-																<g filter="url(#filter0_d_0_1486)">
-																	<ellipse cx="6.29139" cy="6.999" rx="6.29139" ry="6.999" transform="matrix(0.951247 0.308431 -0.307588 0.951519 3.65564 -0.792114)" fill="url(#paint1_radial_0_1486)" />
-																	<ellipse cx="6.29139" cy="6.999" rx="6.29139" ry="6.999" transform="matrix(0.951247 0.308431 -0.307588 0.951519 3.65564 -0.792114)" fill="url(#paint2_linear_0_1486)" fill-opacity="0.5" style="mix-blend-mode:overlay" />
-																	<path d="M13.2997 9.69258C12.1358 13.2931 8.58363 15.3306 5.39044 14.2952C2.19724 13.2599 0.51133 9.52402 1.67524 5.92347C2.83915 2.32293 6.39136 0.285452 9.58456 1.32081C12.7777 2.35616 14.4637 6.09204 13.2997 9.69258Z" stroke="url(#paint3_radial_0_1486)" stroke-width="0.3625" />
-																</g>
-																<g filter="url(#filter1_ii_0_1486)">
-																	<ellipse cx="4.69358" cy="5.19926" rx="4.69358" ry="5.19926" transform="matrix(0.951247 0.308431 -0.307588 0.95152 4.62207 1.41324)" fill="#F3AF29" />
-																</g>
-																<g filter="url(#filter2_dd_0_1486)">
-																	<path fill-rule="evenodd" clip-rule="evenodd" d="M4.22406 6.51787C4.26663 5.83803 4.802 5.32734 5.47716 5.32252L9.43207 5.29425C9.96361 5.29045 10.4214 5.73372 10.4431 6.27318C10.4582 6.65066 10.3751 7.0191 10.2019 7.34147L8.46341 10.5779C8.22068 11.0298 7.74629 11.297 7.22375 11.2762L7.10197 11.2713C6.55331 11.2494 6.04441 10.914 5.78947 10.4062L4.49786 7.83342C4.29072 7.42082 4.19601 6.96575 4.22406 6.51787ZM5.75488 7.17357C5.70922 6.81461 5.97454 6.51267 6.32941 6.51975L8.30256 6.55907C8.53991 6.5638 8.74839 6.74616 8.78981 6.98527C8.81938 7.15602 8.79429 7.32833 8.71826 7.47662L7.70887 9.44518C7.61548 9.62732 7.41979 9.72814 7.2118 9.70128C7.02935 9.67772 6.86638 9.55939 6.78266 9.3897L5.85879 7.51707C5.80511 7.40825 5.76994 7.29202 5.75488 7.17357Z" fill="url(#paint4_linear_0_1486)" />
-																</g>
-																<g style="mix-blend-mode:multiply">
-																	<path d="M2.9695 8.94649C3.34899 11.5876 5.32367 13.1307 7.76784 12.6622C10.4084 12.156 11.9578 9.30194 11.8182 7.38348L2.9695 8.94649Z" fill="black" fill-opacity="0.11" />
-																</g>
-															</g>
-															<defs>
-																<filter id="filter0_d_0_1486" x="1.12567" y="0.869598" width="13.0861" height="14.2394" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-																	<feFlood flood-opacity="0" result="BackgroundImageFix" />
-																	<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
-																	<feOffset dx="0.3625" dy="0.3625" />
-																	<feComposite in2="hardAlpha" operator="out" />
-																	<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.45 0" />
-																	<feBlend mode="soft-light" in2="BackgroundImageFix" result="effect1_dropShadow_0_1486" />
-																	<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_0_1486" result="shape" />
-																</filter>
-																<filter id="filter1_ii_0_1486" x="2.74377" y="2.6521" width="9.48761" height="10.312" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-																	<feFlood flood-opacity="0" result="BackgroundImageFix" />
-																	<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
-																	<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
-																	<feOffset dx="0.3625" dy="0.3625" />
-																	<feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1" />
-																	<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0" />
-																	<feBlend mode="soft-light" in2="shape" result="effect1_innerShadow_0_1486" />
-																	<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
-																	<feOffset dx="-0.3625" />
-																	<feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1" />
-																	<feColorMatrix type="matrix" values="0 0 0 0 0.984342 0 0 0 0 0.77635 0 0 0 0 0.584357 0 0 0 0.4 0" />
-																	<feBlend mode="plus-lighter" in2="effect1_innerShadow_0_1486" result="effect2_innerShadow_0_1486" />
-																</filter>
-																<filter id="filter2_dd_0_1486" x="3.93646" y="4.50552" width="7.22058" height="7.78883" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-																	<feFlood flood-opacity="0" result="BackgroundImageFix" />
-																	<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
-																	<feOffset dx="0.435" dy="0.3625" />
-																	<feComposite in2="hardAlpha" operator="out" />
-																	<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0" />
-																	<feBlend mode="soft-light" in2="BackgroundImageFix" result="effect1_dropShadow_0_1486" />
-																	<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
-																	<feOffset dx="0.435" dy="0.3625" />
-																	<feComposite in2="hardAlpha" operator="out" />
-																	<feColorMatrix type="matrix" values="0 0 0 0 0.627295 0 0 0 0 0.371202 0 0 0 0 0.0705707 0 0 0 0.4 0" />
-																	<feBlend mode="multiply" in2="effect1_dropShadow_0_1486" result="effect2_dropShadow_0_1486" />
-																	<feBlend mode="normal" in="SourceGraphic" in2="effect2_dropShadow_0_1486" result="shape" />
-																</filter>
-																<radialGradient id="paint0_radial_0_1486" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(7.24908 15.7144) rotate(-82.9376) scale(13.7419 12.0175)">
-																	<stop offset="0.356962" stop-color="#99541B" />
-																	<stop offset="0.788512" stop-color="#EA7E26" />
-																	<stop offset="1" stop-color="#EFBB57" />
-																</radialGradient>
-																<radialGradient id="paint1_radial_0_1486" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(7.8193 14.5979) rotate(-100.929) scale(13.7474 12.1061)">
-																	<stop offset="0.788512" stop-color="#FFB800" />
-																	<stop offset="1" stop-color="#F9DE68" />
-																</radialGradient>
-																<linearGradient id="paint2_linear_0_1486" x1="2.89378" y1="2.15971" x2="10.75" y2="11.6115" gradientUnits="userSpaceOnUse">
-																	<stop stop-color="white" />
-																	<stop offset="0.555853" stop-color="white" stop-opacity="0" />
-																</linearGradient>
-																<radialGradient id="paint3_radial_0_1486" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(8.60013 13.4243) rotate(-98.5713) scale(12.2935 11.565)">
-																	<stop offset="0.0939274" stop-color="#824A0F" stop-opacity="0.45" />
-																	<stop offset="0.584638" stop-color="#E1A568" />
-																	<stop offset="0.8" stop-color="#FFD9B1" stop-opacity="0.43" />
-																	<stop offset="0.965" stop-color="#FFE0C1" />
-																</radialGradient>
-																<linearGradient id="paint4_linear_0_1486" x1="7.42506" y1="5.02627" x2="6.62572" y2="11.2155" gradientUnits="userSpaceOnUse">
-																	<stop stop-color="#FFD80E" />
-																	<stop offset="1" stop-color="#FFDD2B" />
-																</linearGradient>
-																<clipPath id="clip0_0_1486">
-																	<rect width="17" height="16" fill="white" />
-																</clipPath>
-															</defs>
-														</svg>
+														<img src="img/moneta-duck2.webp" width="16" height="16" alt="Image">
 													</i>
 													28156
 												</div>
@@ -532,7 +682,7 @@
 			}
 		}
 	</script>
-	<script src="js/app.min.js?_v=20240613174406"></script>
+	<script src="js/app.min.js?_v=20240615161006"></script>
 </body>
 
 </html>
