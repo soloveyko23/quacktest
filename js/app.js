@@ -3170,8 +3170,10 @@
         const startPoint = header.dataset.scroll ? header.dataset.scroll : 1;
         let scrollDirection = 0;
         let timer;
-        document.addEventListener("windowScroll", (function(e) {
-            const scrollTop = window.scrollY;
+        const wrapper = document.querySelector(".wrapper");
+        wrapper.addEventListener("scroll", (function(e) {
+            console.log("Scrolling...", e);
+            const scrollTop = wrapper.scrollTop;
             clearTimeout(timer);
             if (scrollTop >= startPoint) {
                 !header.classList.contains("_header-scroll") ? header.classList.add("_header-scroll") : null;

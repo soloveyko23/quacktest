@@ -128,12 +128,17 @@ body,
 html {
   height: 100%;
   margin: 0;
-  padding: 0
+  padding: 0;
+  overflow: hidden
 }
 .wrapper,
 body,
 html {
   background: linear-gradient(189.19deg,#43cdff -2.508%,#b8f2fe 23.941%)
+}
+.wrapper {
+  height: 100%;
+  overflow: auto!important
 }
 .header {
   z-index: 5
