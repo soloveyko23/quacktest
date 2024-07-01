@@ -161,9 +161,6 @@ html {
   overflow-x: hidden!important;
   overflow-y: auto!important
 }
-.wrapper:not(.change-bg) .page {
-  background: url(../img/bg.webp) 0 0/100% 100% no-repeat
-}
 * {
   -webkit-user-select: none;
   -ms-user-select: none;
@@ -372,7 +369,10 @@ button:focus {
   }
 }
 .app-page {
-  padding-top: 17vh
+  padding-top: 6vh
+}
+.change-bg .app-page {
+  padding-top: 10vh
 }
 .app-page__content {
   box-sizing: border-box;
@@ -1044,7 +1044,7 @@ button:focus {
   min-height: 20vh
 }
 .app .content-app__duck img {
-  height: 25vh
+  height: 35vh
 }
 .app .user {
   max-width: 2.125rem;
@@ -1239,5 +1239,21 @@ button:focus {
 @media (max-width:480px) and (min-width:400px) {
   .app .main-menu ul {
     padding: 0 1.875rem 1.25rem 1.875rem
+  }
+}
+@media (min-height:700px) {
+  .wrapper:not(.change-bg) .page {
+    background: url(../img/bg.webp) 0 0/100% 100% fixed no-repeat
+  }
+}
+@media (max-height:700px) {
+  .wrapper:not(.change-bg) .page {
+    background: url(../img/bg.webp) 0 0/100% 100% fixed no-repeat
+  }
+  .app-page {
+    padding-top: 10vh
+  }
+  .app .content-app__duck img {
+    height: 30vh
   }
 }
