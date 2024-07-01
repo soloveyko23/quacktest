@@ -372,7 +372,7 @@ button:focus {
   }
 }
 .app-page {
-  padding-top: 5rem
+  padding-top: 17vh
 }
 .app-page__content {
   box-sizing: border-box;
@@ -574,7 +574,11 @@ button:focus {
   padding-bottom: 1.25rem;
   margin: 0 -.75rem;
   padding-left: .75rem;
-  padding-right: .75rem
+  padding-right: .75rem;
+  min-height: 50vh
+}
+.app-content .swiper-wrapper {
+  min-height: 70vh
 }
 .app .hide {
   opacity: 0;
@@ -950,6 +954,9 @@ button:focus {
   flex-direction: column;
   justify-content: center
 }
+.app .content-app__slots {
+  min-height: 30vh
+}
 .app .content-app__slots .duck-slots__row {
   display: grid;
   grid-template-columns: repeat(4,1fr);
@@ -958,7 +965,7 @@ button:focus {
 .app .content-app__slots .duck-slots__slot {
   border: 1px dashed rgba(255,255,255,.4);
   border-radius: .5625rem;
-  min-height: 10vh;
+  min-height: 11.1vh;
   position: relative
 }
 .app .content-app__slots .duck-slots__slot .slot__body {
@@ -1023,7 +1030,8 @@ button:focus {
   background: url(../img/slot-text.svg) 0 0/contain no-repeat
 }
 .app .content-app__progress {
-  margin: 0 -.5rem
+  margin: 0 -.5rem;
+  height: 13vh
 }
 .app .content-app__progress img {
   max-width: 100%;
