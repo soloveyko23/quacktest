@@ -3139,20 +3139,20 @@
                 on: {}
             });
             document.querySelector(".item-shop").addEventListener("click", (() => {
-                document.querySelector(".page").classList.add("change-bg");
+                document.querySelector(".wrapper").classList.add("change-bg");
                 sliderAppContent.slideTo(1, 300);
             }));
             document.querySelector(".item-ducks").addEventListener("click", (() => {
-                document.querySelector(".page").classList.add("change-bg");
+                document.querySelector(".wrapper").classList.add("change-bg");
                 sliderAppContent.slideTo(2, 300);
             }));
             document.querySelector(".item-main").addEventListener("click", (() => {
-                document.querySelector(".page").classList.remove("change-bg");
+                document.querySelector(".wrapper").classList.remove("change-bg");
                 sliderAppContent.slideTo(0, 300);
             }));
             document.querySelectorAll(".close").forEach((closeBtn => {
                 closeBtn.addEventListener("click", (() => {
-                    document.querySelector(".page").classList.remove("change-bg");
+                    document.querySelector(".wrapper").classList.remove("change-bg");
                     sliderAppContent.slideTo(0, 300);
                 }));
             }));
